@@ -21,17 +21,22 @@
 			font-size:50px;
 			font-family: "Lexend", sans-serif;
 			vertical-align:center;
-			padding: 40px 0 0 0;
+			padding: 3px 0 0 0;
 			margin: 118px 0 0 0;
-		
+			display:inline-block;
+			vertical-align:top;
+			height:300px;
+			width:auto;
 		}
 		
 		h2 {
 			text-align:center;
-			font-size:45px;
-			font-family:Impact;
+			font-size:38px;
+			font-family:"PT serif";
 			color: #8c4a23;	
-			margin: -120px 0 40px 0;	
+			margin: -120px 0 40px 0;
+			background-color:#f79051;
+			border:solid 5px;
 		}
 		
 		wrapper {
@@ -43,59 +48,120 @@
 			padding: 20px;
 		
 		}
-		
-		section {
-			border: solid 25px #d98b2b;
-			margin:auto;
+
+		section{
+			border: solid 20px rgb(217,139,43);
+			margin:15px;
 			display:inline-block;
-			width:50%; 
+			width:48%; 
 	  		vertical-align: top;
-			background-color: rgb(204,92,92,.5);
+			background-color: rgb(204,92,92,.75);
 			padding:20px;	
 			box-sizing:border-box;
 			margin-right:-4px;
-			height:450px;
+			height:575px;
+			border-radius:50px 50px 0px 00px;
+			font-family:"PT serif";
+			box-sizing:border-box;
+			margin-top:40px;
+		
+		
+		}
+		ul li {
+			background-image: URL('diamondbullet.png');
+			background-position: left;
+			background-size:55px;
+			background-repeat:no-repeat;
+			list-style:none;
+			padding:3px 0 2px 57px;
+			margin: 0;
+			margin-bottom:3px;
+			margin-top:10px;
 		}
 		
-		.logo,h1 {
+		ol li {
+			padding:3px 0 2px 40;
+			margin-bottom:50px;
+			margin-top:60px;
+		}
+		
+		p {
+			font-family:"PT serif", bold;
+		
+		}
+		
+		footer {
+			background-color:rgba(255,255,255,0.50);
+			padding:25px;
+		
+		}
+		
+		.logo {
 			display:inline-block;
 			vertical-align:top;
 			padding: 0;
-			height: 300px;
+			height: 312px;
 			width:auto;
+			background-color:
 		}
 		.banner {
 			width:400px;
 			height:auto;
 			display:block;
 			margin-right:auto;
-			margin-left:auto; }
+			margin-left:auto; 
+			border-radius:0px 00px 50px 50px;
+			border:solid 10px #598c42;;
+		}
 
 		.ingredients {
 			color:#598c42;
 			font-size:35px;
 			font-family: "Lexend", sans-serif;
+			background-color:rgb(217,139,43);
+			text-align:center;
+			border-radius: 50px 50px 0px 0px;
+			margin-top:-60px
+		}
+		.ul {
+			font-family:"PT serif";
+			font-size:15px;
+			
 		}
 		
 		.steps {
 			color:#598c42;
 			font-size:35px;
 			font-family: "Lexend", sans-serif;
+			background-color:rgb(217,139,43);
+			text-align:center;
+			border-radius: 50px 50px 0px 0px;
+			margin-top:-60px
+	
 		}
 		.blurb {
 			color:#8c4a23;
-			font-size:25px;
-			background-color:;
-			padding: 20px 
-				
+			font-size:18px;
+			background-color:#f79051;
+			padding: 20px; 
+	        border: solid 5px #598c42;
+			border-radius:50px;
+			margin-top:40px;
 		}
+		
+		
+		
 		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 				
-
-	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	    
+		<img src="diamondbullet.png" alt="diamond bullets"/>
+		
 	</style>
 </head>	
 	<body>
@@ -119,15 +185,16 @@
 			<img src="vegancurry.jpg" alt="Image of curry dish"
 				 class="banner"/>
 			
-		<p class="blurb">This chickpea curry recipe with sweet potato and spinach is seasoned with fragrant spices for a yummy vegan dish. Said to be one of the favorites of yogic leader, Guru Kadi Ramaswamy, it has been served in India for nearly 400 years. Serve with basmati rice and naan bread.</p>
+		<p class="blurb"><strong>This chickpea curry recipe with sweet potato and spinach is seasoned with fragrant spices for a yummy vegan dish. Said to be one of the favorites of yogic leader, Guru Kadi Ramaswamy, it has been served in India for nearly 400 years. Serve with basmati rice and naan bread.</strong></p>
 			
 			<section>
 				
 
 			<h3 class="ingredients">Ingredients</h3>
 			
-				<ul>
+				<ul class="ul">
 				
+					
 				<li>3 tablespoons olive oil</li>
 
 <li>1 onion, chopped</li>
@@ -183,8 +250,10 @@
 </main>
 		
 <footer>
-		<p> &copy; 2024, Evan Hickam </p>
-			<fieldset>
+	
+	<fieldset>	
+	<p><strong>&copy; 2024, Evan Hickam </strong></p>
+			
 			<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
 		</fieldset>
 </footer>
