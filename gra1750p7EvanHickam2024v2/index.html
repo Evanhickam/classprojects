@@ -29,15 +29,20 @@
 		.greeneyes {
 			display:inline-block;
 			width:250px;
-			margin:50px;
+			margin:10px 50px;
 		}
 		
 		.berk {
 			display:inline-block;
 			width:250px;
-			margin:50px 25px 50px 195px;
+			margin:10px 50px;
 		}
-		
+		.heroes{
+			display:inline-block;
+			width:200px;
+			height:200px;
+			margin:10px 50px;
+		}
 		h1{
   			font-family: "Cherry Cream Soda", system-ui;
  			font-weight: 400;
@@ -48,14 +53,6 @@
 			color:silver;
 		}
 		
-		div {
-		
-			font-family: "Cinzel Decorative", serif;
-  			font-weight: 900;
-  			font-style: normal;
-			margin:0px 10px 0px 100px;
-		}
-		
 		header {
 			background-image:url("giphy.webp");
 			background-repeat: no-repeat;
@@ -63,9 +60,8 @@
 			background-size:cover;
 			margin: 0px auto;
 			background-color:black;
-			height:200px;
+			height:300px;
 		
-			
 		}
 		
 		
@@ -103,10 +99,6 @@
   			font-style: normal;
 			margin:6px;
 			background-color:silver
-		
-			
-		}
-		banner{
 			
 		}
 		footer{
@@ -115,24 +107,20 @@
 		}
 		
 		p{
+			
 			font-family: "Cherry Cream Soda", system-ui;
  			font-weight: 400;
   			font-style: normal;
 			display:inline-block;
 			color: white;
-			text-shadow: 2px 4px #008000;
+			text-shadow: 2px 4px black;
 			padding:30px;
-			
-			
-		}
-		section{
-			display:inline-block;
+			align-content:center center;
 			width:700px;
 			font-size:25px;
 			margin-left:100px;
 			padding:100px;
 			
-		
 		}
 		
 		.giphy-embed{
@@ -143,9 +131,21 @@
 			
 		}
 		
-		.tablet{
-			
+		.facebook{
+			background-color:white;
+			margin:0px 10px 0px 340px;
 		}
+		.twitter{
+			background-color:white;
+			margin:0px 10px 0px 30px;
+		}
+		.instagram{
+			background-color:white;
+			margin:60px 10px 0px 30px;
+		}
+	
+	
+	
 	</style>
 	
 </head>
@@ -160,11 +160,11 @@
 <wrapper> 
  
 	<nav><ul>
-		<li>Home</li>
-		<li>Synopsis</li>
-		<li>Gallery</li>
-		<li>Cast &amp; Crew</li>
-		<li>Follow</li>
+		<li><a href="#home"> Home </a></li>
+		<li><a href="#synopsis"> Synopsis</a></li>
+		<li><a href="#gallery"> Gallery</a></li>
+		<li><a href="https://www.imdb.com/title/tt26743210/"> Cast &amp; Crew</a></li>
+		<li><a href="#follow"> Follow </a> </li>
 		</ul></nav>
 	
 	
@@ -172,16 +172,23 @@
 	
 	<img src="toothless.png" alt="Toothless the dragon" class="toothless" />
 	
-	<section><p>On the rugged isle of Berk, a Viking boy named Hiccup defies centuries of tradition by befriending a dragon named Toothless. However, when an ancient threat emerges that endangers both species, Hiccup's friendship with Toothless becomes the key to forging a new future. Together, they must navigate the delicate path toward peace, soaring beyond the boundaries of their worlds and redefining what it means to be a hero and a leader.
+	<section  id="synopsis"><p >  On the rugged isle of Berk, a Viking boy named Hiccup defies centuries of tradition by befriending a dragon named Toothless. However, when an ancient threat emerges that endangers both species, Hiccup's friendship with Toothless becomes the key to forging a new future. Together, they must navigate the delicate path toward peace, soaring beyond the boundaries of their worlds and redefining what it means to be a hero and a leader.
 		 
 	
 	</p></section>	
-	
-	<img src="berk.gif" alt="Hiccup reaching up" class="berk" />
+	<section> 
+	<img src="berk.gif" alt="Hiccup reaching up" class="berk" id="gallery" />
 	
 	<img src="green_eyes.gif" alt="Toothless' green eyes" class="greeneyes"/>
 	
- 
+	<img src="heroes.jpg" alt="Hiccup and girlfriend looking worried" class="heroes"/>
+	
+	</section>
+ 	
+	
+	<img src="facebook.png" alt="Facebook Logo" class="facebook" id="follow" />
+	<img src="twitterX.png" alt="Twitter/X Logo" class="twitter"/>
+	<img src="instagram.png" alt="Instagram Logo" class="instagram"/>
 	
 </body>
 	
