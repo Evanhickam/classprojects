@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SoFlo Gardening Club | Evan Hickam, 2025</title>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	
+<script type="text/javascript">
+  $(document).ready(
+    function() {
+      $('#icon').click (
+        function() {
+          $('#nav').show();
+          $('#icon').hide();
+          $('#x_icon').show();
+        }
+  );
+  $('#x_icon').click (
+    function() {
+          $('#nav').hide();
+          $('#icon').show();
+          $('#x_icon').hide();
+        }
+      );
+    }
+  );
+</script> 
+	
+<style>
+	body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+    wrapper {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    background-color: #ff914d;
+}
+    header {
+    padding: 0.5em;
+    background-color: #7ed957;
+}
+    nav ul {
+    padding: 0;
+    margin: 0;
+}
+    nav ul li {
+    font-size: 14px;
+    padding: 0.5em;
+    font-family: sans-serif;
+    list-style-type: none;
+    border-bottom: thin solid #ccc;
+}
+	.coleus  {
+		width: 90%;
+		margin: 40px;
+	}
+	.salvia { 
+	width: 90%;
+		margin: 40px;
+	}
+	
+	.begonia {
+		width: 90%;
+		margin: 40px;
+	}
+	.logo {
+		width: 25%;
+	}
+	div .{
+		vertical-align:top;
+		margin: 10%;
+	 	text-align: left;
+		width: 100%;
+	}
+	
+	article {
+		width: 100%;
+		margin: 40px;
+	}
+	
+	nav ul a {
+	color: #FFFFFF;
+	background-color: #ff66c4;
+	}
+	
+	nav ul a:hover  {
+    color: #666;
+}
+    h1 {
+    margin: 0;
+    color: #fff;
+    padding: 0.5em;
+    font-family: sans-serif;
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+	text-align: center;
+}
+ 
+#nav {
+    display: none;
+}
+    
+@media (min-width:50em){
+
+	wrapper {
+    width: 80%;
+}
+	h1  {
+    width: 100%;
+	
+		display:inline-block;
+}
+	logo {
+		display:inline-block;
+	}
+	
+	
+	#icon {
+    display: none;
+}
+#nav {
+    display: block;
+}
+nav ul li {
+    width: 30%;
+    display: inline-block;
+    border: 0;
+    text-align: center;
+}
+
+	div {
+		margin: 3%;
+		width:43%;
+		display: inline-block;
+		text-align: left;
+	}
+	article{
+		width: 90%;
+	}
+	}
+    </style>
+</head>
+
+
+	
+<body>
+	<wrapper>
+	<header> <div> 
+	<img id="icon" src="navigation_icon.gif" alt="Navigation icon. Click to expand navigation menu."/>
+<img id="x_icon" src="x_icon.gif" alt="Exit out icon. Click to close navigation menu." style="display:none;" > </div>
+	
+		<h1>South Florida Gardening Tips</h1>
+		
+		<img src="logo_small.mp4" alt="SoFlo Gardeners Logo" class="logo" />
+		
+	
+	 	
+<nav id="nav">
+  <ul>
+    <a href="#about_us" id="about_us_link"><li>About Us</li></a>
+    <a href="#blogs" id="blogs_link"><li>Blogs</li></a>
+    <a href="#contact_us" id="contact_us_link"><li>Contact Us</li></a>
+  </ul>
+</nav>
+	 
+	</header>
+	<main>
+	
+	<div>
+		<img src="coleus.jpg" alt="coleus flower" class="coleus" />
+		<article><h2> Coleus </h2><h3>The coleus plant is known for its vibrant, multicolored foliage and thrives in warm, humid climates. It grows well in South Florida because it loves heat, can tolerate partial shade, and adapts easily to the region’s moist soil. Its fast growth and low maintenance make it a popular choice for adding color to gardens and landscapes year-round.</h3></article>
+		</div>	
+	
+		
+	 <div>
+		<img src="salvia.jpg" alt="salvia plant" class="salvia" />
+		<article><h2>Salvia</h2><h3>Salvia is a hardy, flowering plant that produces bright, tubular blooms that attract pollinators like bees and hummingbirds. It grows well in South Florida thanks to its tolerance for heat, humidity, and sandy, well-drained soil. With its long blooming season and drought resistance, salvia is an excellent choice for low-maintenance, colorful landscapes.</h3></article>
+	 </div>
+	
+		<div>
+		<img src="wax_begonia.jpg" alt="begonia flower" class="begonia"/>
+		<article><h2>Wax Begonia</h2><h3>Wax begonia is a compact, bushy plant with glossy leaves and delicate flowers in shades of pink, red, or white. It thrives in South Florida’s warm, humid climate and performs well in both sun and partial shade. Its resilience, low water needs, and year-round blooming make it a favorite for borders, containers, and garden beds.</h3></article>
+		</div>
+	</main>
+		<footer>
+© 2025, Evan Hickam&nbsp; This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category. </footer>
+		
+	 
+	
+</wrapper>
+</body>
+</html>
