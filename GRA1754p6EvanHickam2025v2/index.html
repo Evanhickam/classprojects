@@ -112,7 +112,7 @@
 	text-align: center;
 	font-size: 30px;
 }
-	#flowers {
+	.flowers {
 		color: white;
 		background-color: #ff66c4;
 		text-align: center;
@@ -122,7 +122,7 @@
 		height: 15px;
 		padding: 5px 0 13px 0;
 	 }
-	#herbs {
+	.herbs {
 		color: white;
 		background-color: #ff66c4;
 		text-align: center;
@@ -130,7 +130,7 @@
 		font-size: 20px;
 		padding: 6px 0 6px 0;
 	 }
-	#vegetables {
+	.vegetables {
 		color: white;
 		background-color: #ff66c4;
 		text-align: center;
@@ -205,28 +205,32 @@ nav ul li {
 	
 <body>
 	<wrapper>
-	<header> <div> 
-	<img id="icon" src="navigation_icon.gif" alt="Navigation icon. Click to expand navigation menu." />
-<img id="x_icon" src="x_icon.gif" alt="Exit out icon. Click to close navigation menu."  style="display:none;" > </div>
+	<header>  
 	
-		<span> <h1>South Florida Gardening Tips <br> <br> What to Plant in May</h1></span>
 		
-		<img src="logo_small.mp4" alt="SoFlo Gardeners Logo" class="logo" />
+		
+		
+		<img id="icon" src="navigation_icon.gif" alt="Navigation icon. Click to expand navigation menu." />
+<img id="x_icon" src="x_icon.gif" alt="Exit out icon. Click to close navigation menu."  style="display:none;" /> 
+	
+		 
 		
 	
 	 	
-<nav id="nav">
+<nav id="nav" style="display: none;">
   <ul>
     <a href="#about_us" id="about_us_link"><li>About Us</li></a>
     <a href="#blogs" id="blogs_link"><li>Blogs</li></a>
     <a href="#contact_us" id="contact_us_link"><li>Contact Us</li></a>
   </ul>
 </nav>
-	 
+	 <span> <h1>South Florida Gardening Tips <br> <br> What to Plant in May</h1></span>
+		
+		<img src="logo_small.mp4" alt="SoFlo Gardeners Logo" class="logo" />
 	</header>
 	<main>
 	
-		<div id="flowers"><em>Flowers</em> </div>
+		<div class="flowers"><em>Flowers</em> </div>
 	
 	<section>
 		<img src="coleus.jpg" alt="coleus flower" class="images" />
@@ -244,7 +248,7 @@ nav ul li {
 		<article><h2>Wax Begonia</h2><p>Wax begonia is a compact, bushy plant with glossy leaves and delicate flowers in shades of pink, red, or white. It thrives in South Florida’s warm, humid climate and performs well in both sun and partial shade. Its resilience, low water needs, and year-round blooming make it a favorite for borders, containers, and garden beds.</p></article>
 		</section>
 	
-		<div id="herbs"><em>Herbs</em></div>
+		<div class="herbs"><em>Herbs</em></div>
 		
 		<section>
 		<img src="basil.jpg" alt="basil plant" class="images"/>
@@ -261,7 +265,7 @@ nav ul li {
 		<article><h2>Rosemary</h2><p>Rosemary is an aromatic herb with needle-like leaves and a strong, piney scent, commonly used to enhance the flavor of meats, vegetables, and stews. It grows well in South Florida because it thrives in the region’s sunny, warm climate and well-drained, slightly sandy soils. Rosemary also tolerates occasional drought, making it perfect for South Florida’s conditions, where it can withstand periods of lower rainfall while still flourishing.</p></article>
 		</section>
 		
-		<div id="vegetables"><em>Vegetables</em> </div>
+		<div class="vegetables"><em>Vegetables</em> </div>
 		
 		<section>
 		<img src="sweet_potatos.jpg" alt="sweet potato plant" class="images"/>
