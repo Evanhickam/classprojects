@@ -28,17 +28,24 @@ document.getElementById("password2").setCustomValidity("");
 <style>
 	
 	body{
-		background-image:url( .svg);
+		background-image:url(pepper.svg);
+		
 	}
+	
+	main {
+		background-color: rgba(239,184,41);
+		padding: 10px;
+	}
+	
 	header {
     height: 375px;
     border-bottom: 20px solid #cb2027;
-	
+	background-color: #4a863e;
 		
 	}
 	
 	.logo {
-		background-color: rgba(239,184,41,0.78);
+		background-color: rgba(239,184,41);
 		border: solid thick #cb2027;
 		border-style: double;
 		padding:10px 20px 40px 15px;
@@ -61,7 +68,119 @@ document.getElementById("password2").setCustomValidity("");
 		font-family: "Chau Philomene One", sans-serif;
 	}
 	
+	wrapper {
+		background-color: rgb (239,184,41);
+		width: 100%;
+	}
 	
+section {
+    width: 100%;
+    display: inline-block;
+    margin-right: -4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+label {
+    display: block;
+    font-family: sans-serif;
+    padding: 16px;
+    font-size: 15px;
+}
+input, select {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    width: 90%;
+}
+#tandc_txt {
+    margin-left: 16px;
+    margin-top: -24px;
+}
+#title {
+    width: 100%;
+    display: inline-block;
+    margin-right: -4px;
+}
+#first {
+    width: 100%;
+    display: inline-block;
+    margin-right: -4px;
+    font-size: medium;
+}
+#submit_btn {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+    color: rgba(239,184,41);
+    border-radius: 30px;
+    background-color: #E91619;
+    font-size: 20px;
+}
+	
+	
+	@media (min-width:75em){
+		label {
+			width: 25%;
+			display: inline-block;
+			box-sizing: border-box;
+			margin-right: -4px;
+			text-align: right;
+		}	
+		
+		input,select {
+			width: 72%;
+			display: inline-block;
+			box-sizing: border-box;
+			margin-right: -4px;
+			
+		}
+			
+		}
+	@media (min-width:125em){
+		section {
+			width: 50%;
+			box-sizing: border-box;
+			margin-right: -4px;
+		} 
+		label {
+			width: 100%;
+			display: block;
+			box-sizing: border-box;
+			text-align: left;
+		}
+		#tandc_txt {
+    margin-left: -20px;
+    margin-top: -34px;
+}
+		
+		}
+		input,select {
+			width: 90%;
+			display:block;
+			box-sizing: border-box;
+			margin-right: -4px;
+		}
+		#title {
+			width: 25%;
+			display: inline-block;
+			box-sizing: border-box;
+			margin-right: -4px;
+			
+		}
+	
+		#first {
+			width: 72%;
+			display: inline-block;
+			box-sizing: border-box;
+			margin-right: -4px;
+			
+		}
+	
+	}
 </style>
 
 </head>
@@ -71,24 +190,29 @@ document.getElementById("password2").setCustomValidity("");
 <wrapper>
 	<header>
 	
-	<img src="Pepe_logo.svg" alt="Pepe Picante's Logo" class="logo"/>
+	<img src="pepe_logo.png" alt="Pepe Picante's Logo" class="logo"/>
 	</header>
 	
   <main>
 		
 	  <h1>Welcome! Start earning points towards free food and merch!</h1>
-	  <h2>Please fill in the form below</h2>
-	  <h3>All fields are required unless noted otherwise</h3>
+	  <h2>Please fill in the form below.</h2>
+	  <h3>All fields are required unless noted otherwise.</h3>
 	<form action="confirm.html">
-	  <section><label>Title</label><select name="title_txt" required="required" id="title_txt">
+	  <section>
+		  
+		 <div id="title">  <label>Title</label><select name="title_txt" required="required" id="title_txt">
 		  <option value="0" selected="selected">Title</option>
 		  <option value="1">Mr.</option>
 		  <option value="2">Mrs.</option>
 		  <option value="3">Ms.</option>
 		  <option value="4">Miss</option>
 		  <option value="5">None</option>
-		</select><label>First Name</label>
-		<input name="firstname_txt" type="text" required="required" id="firstname_txt" placeholder="First Name">
+		</select></div>
+		  
+		  <div id="first"> 
+		  <label>First Name</label>
+		<input name="firstname_txt" type="text" required="required" id="firstname_txt" placeholder="First Name"></div> 
 	    <label>Last Name</label>
 		  <input name="lastname_txt" type="text" required="required" id="lastname_txt" placeholder="Last Name">
 		  <label>Birthdate<input name="birthdate_txt" type="date" required="required" id="birthdate_txt"></label>
@@ -100,8 +224,29 @@ document.getElementById("password2").setCustomValidity("");
 		  <input name="password1" type="password" id="password1" placeholder="Must consist of 8-12 characters" pattern="[0-9A-Za-z]{6,12}">
 	    <label>Confirm Password</label>
 		  <input name="password2" type="password" required="required" id="password2" placeholder="Must match original password">
+		<label>Address</label>
+		  <input name="address_txt" type="text" required="required" id="address_txt" placeholder="Enter street address">
+		<label>Additional Address Info (optional)</label>
+		  <input name="address2_txt" type="text" id="address2_txt" placeholder="Street 2 (optional)">
 		</section>
-		<section></section>
+		<section>
+		<label>City</label>
+			<input name="city_txt" type="text" required="required" id="city_txt" placeholder="Enter City">
+		<label>State</label>
+			<select name="state_txt" required="required" id="state_txt">
+			  <option value="0">State</option>
+			  <option value="FL">Florida</option>
+			  <option value="NY">New York</option>
+			  <option value="CA">California</option>
+			</select>
+		<label>Zip Code</label>
+			<input name="zipcode_txt" type="text" required="required" id="zipcode_txt" placeholder="Zip Code" pattern="[0-9]{5}">
+		<label>I agree to the terms and conditions</label>
+			<input name="tandc_txt" type="checkbox" required="required" id="tandc_txt">
+		
+		</section>
+		
+		<input name="submit_btn" type="submit" id="submit_btn" value="Join Pepe Points!">
 	</form>
 	</main>
 	
